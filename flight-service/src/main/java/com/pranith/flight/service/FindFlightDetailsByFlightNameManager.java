@@ -1,0 +1,8 @@
+package com.pranith.flight.service;
+
+import com.pranith.flight.service.criteria.FindFlightDetailsByFlightNameCriteria;
+import com.pranith.flight.service.response.FindFlightDetailsByFlightNameResponse;
+
+public interface FindFlightDetailsByFlightNameManager {
+    FindFlightDetailsByFlightNameResponse findFlightDetailsByFlightNameResponse(FindFlightDetailsByFlightNameCriteria findFlightDetailsByFlightNameCriteria);
+}
