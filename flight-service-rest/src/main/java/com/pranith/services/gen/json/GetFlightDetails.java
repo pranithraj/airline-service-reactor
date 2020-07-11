@@ -1,8 +1,6 @@
 package com.pranith.services.gen.json;
 
-import java.sql.Date;
 import java.util.HashMap;
-import java.util.List;
 import java.util.Map;
 import com.fasterxml.jackson.annotation.JsonAnyGetter;
 import com.fasterxml.jackson.annotation.JsonAnySetter;
@@ -36,7 +34,7 @@ public class GetFlightDetails {
     @JsonProperty("airlineId")
     private Integer airlineId;
     @JsonProperty("fromLocation")
-    private String fromLocation;
+    private Boolean fromLocation;
     @JsonProperty("toLocation")
     private String toLocation;
     @JsonProperty("departureTime")
@@ -48,9 +46,9 @@ public class GetFlightDetails {
     @JsonProperty("availableSeats")
     private Integer availableSeats;
     @JsonProperty("flyingDates")
-    private List<Date> flyingDates;
+    private FlyingDates flyingDates;
     @JsonProperty("status")
-    private Status status;
+    private GetFlightDetails.Status status;
     @JsonIgnore
     private Map<String, Object> additionalProperties = new HashMap<String, Object>();
 
@@ -75,12 +73,12 @@ public class GetFlightDetails {
     }
 
     @JsonProperty("fromLocation")
-    public String getFromLocation() {
+    public Boolean getFromLocation() {
         return fromLocation;
     }
 
     @JsonProperty("fromLocation")
-    public void setFromLocation(String fromLocation) {
+    public void setFromLocation(Boolean fromLocation) {
         this.fromLocation = fromLocation;
     }
 
@@ -135,22 +133,22 @@ public class GetFlightDetails {
     }
 
     @JsonProperty("flyingDates")
-    public List<Date> getFlyingDates() {
+    public FlyingDates getFlyingDates() {
         return flyingDates;
     }
 
     @JsonProperty("flyingDates")
-    public void setFlyingDates(List<Date> flyingDates) {
+    public void setFlyingDates(FlyingDates flyingDates) {
         this.flyingDates = flyingDates;
     }
 
     @JsonProperty("status")
-    public Status getStatus() {
+    public GetFlightDetails.Status getStatus() {
         return status;
     }
 
     @JsonProperty("status")
-    public void setStatus(Status status) {
+    public void setStatus(GetFlightDetails.Status status) {
         this.status = status;
     }
 
@@ -188,9 +186,9 @@ public class GetFlightDetails {
 
     public enum Status {
 
-        DEPARTED("0"),
-        REACHED("1"),
-        ARRIVED("2");
+        DEPARTED("DEPARTED"),
+        REACHED("REACHED"),
+        ARRIVED("ARRIVED");
         private final String value;
         private final static Map<String, GetFlightDetails.Status> CONSTANTS = new HashMap<String, GetFlightDetails.Status>();
 

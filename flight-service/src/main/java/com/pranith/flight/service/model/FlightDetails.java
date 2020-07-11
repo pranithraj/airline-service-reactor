@@ -20,26 +20,6 @@ public class FlightDetails {
         status = builder.status;
     }
 
-    public String getFlightId() {
-        return flightId;
-    }
-
-    public String getTicketFare() {
-        return ticketFare;
-    }
-
-    public int getAvailableSeats() {
-        return availableSeats;
-    }
-
-    public List<Date> getFlyingDates() {
-        return flyingDates;
-    }
-
-    public Status getStatus() {
-        return status;
-    }
-
     /**
      * {@code FlightDetails} builder static inner class.
      */

@@ -12,14 +12,6 @@ public class FindFlightDetailsByFlightNameResponse {
         flightDetails = builder.flightDetails;
     }
 
-    public Flight getFlight() {
-        return flight;
-    }
-
-    public FlightDetails getFlightDetails() {
-        return flightDetails;
-    }
-
     /**
      * {@code FindFlightDetailsByFlightNameResponse} builder static inner class.
      */

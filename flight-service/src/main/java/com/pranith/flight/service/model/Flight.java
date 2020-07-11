@@ -21,34 +21,6 @@ public class Flight {
         flightDetails = builder.flightDetails;
     }
 
-    public String getFlightId() {
-        return flightId;
-    }
-
-    public String getAirlineId() {
-        return airlineId;
-    }
-
-    public String getFromLocation() {
-        return fromLocation;
-    }
-
-    public String getToLocation() {
-        return toLocation;
-    }
-
-    public Date getDepartureTime() {
-        return departureTime;
-    }
-
-    public Date getArrivalTime() {
-        return arrivalTime;
-    }
-
-    public FlightDetails getFlightDetails() {
-        return flightDetails;
-    }
-
     /**
      * {@code Flight} builder static inner class.
      */
