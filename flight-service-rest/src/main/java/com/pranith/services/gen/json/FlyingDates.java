@@ -14,36 +14,23 @@ import org.apache.commons.lang.builder.ToStringBuilder;
 
 @JsonInclude(JsonInclude.Include.NON_NULL)
 @JsonPropertyOrder({
-        "type",
-        "items"
+        "flyingDates"
 })
 public class FlyingDates {
 
-    @JsonProperty("type")
-    private Object type;
-    @JsonProperty("items")
-    private Object items;
+    @JsonProperty("flyingDates")
+    private Object flyingDates;
     @JsonIgnore
     private Map<String, Object> additionalProperties = new HashMap<String, Object>();
 
-    @JsonProperty("type")
-    public Object getType() {
-        return type;
+    @JsonProperty("flyingDates")
+    public Object getFlyingDates() {
+        return flyingDates;
     }
 
-    @JsonProperty("type")
-    public void setType(Object type) {
-        this.type = type;
-    }
-
-    @JsonProperty("items")
-    public Object getItems() {
-        return items;
-    }
-
-    @JsonProperty("items")
-    public void setItems(Object items) {
-        this.items = items;
+    @JsonProperty("flyingDates")
+    public void setFlyingDates(Object flyingDates) {
+        this.flyingDates = flyingDates;
     }
 
     @JsonAnyGetter
@@ -58,12 +45,12 @@ public class FlyingDates {
 
     @Override
     public String toString() {
-        return new ToStringBuilder(this).append("type", type).append("items", items).append("additionalProperties", additionalProperties).toString();
+        return new ToStringBuilder(this).append("flyingDates", flyingDates).append("additionalProperties", additionalProperties).toString();
     }
 
     @Override
     public int hashCode() {
-        return new HashCodeBuilder().append(additionalProperties).append(type).append(items).toHashCode();
+        return new HashCodeBuilder().append(flyingDates).append(additionalProperties).toHashCode();
     }
 
     @Override
@@ -75,7 +62,7 @@ public class FlyingDates {
             return false;
         }
         FlyingDates rhs = ((FlyingDates) other);
-        return new EqualsBuilder().append(additionalProperties, rhs.additionalProperties).append(type, rhs.type).append(items, rhs.items).isEquals();
+        return new EqualsBuilder().append(flyingDates, rhs.flyingDates).append(additionalProperties, rhs.additionalProperties).isEquals();
     }
 
 }

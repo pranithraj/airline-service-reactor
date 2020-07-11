@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="flight-service-rest-test" />
+        <module name="flight-service-war" />
+        <module name="flight-service-rest" />
+        <module name="flight-service" />
+        <module name="flight-service-ml" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="airline-service-reactor" target="1.8" />
+      <module name="flight-service" target="1.8" />
+      <module name="flight-service-ml" target="1.8" />
+      <module name="flight-service-rest" target="1.8" />
+      <module name="flight-service-rest-test" target="1.8" />
+      <module name="flight-service-war" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/airline-service-reactor.iml" filepath="$PROJECT_DIR$/.idea/airline-service-reactor.iml" />
+      <module fileurl="file://$PROJECT_DIR$/flight-service/flight-service.iml" filepath="$PROJECT_DIR$/flight-service/flight-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/flight-service-ml/flight-service-ml.iml" filepath="$PROJECT_DIR$/flight-service-ml/flight-service-ml.iml" />
+      <module fileurl="file://$PROJECT_DIR$/flight-service-rest/flight-service-rest.iml" filepath="$PROJECT_DIR$/flight-service-rest/flight-service-rest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/flight-service-rest-test/flight-service-rest-test.iml" filepath="$PROJECT_DIR$/flight-service-rest-test/flight-service-rest-test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/flight-service-war/flight-service-war.iml" filepath="$PROJECT_DIR$/flight-service-war/flight-service-war.iml" />
+    </modules>
+  </component>
+</project>
