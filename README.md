@@ -1,2 +1,2 @@
 # airline-service-reactor
-A demo REST web service with Req-Reply and Pub-Sub implementation
+Demo ReST service with Req-Reply(Jersey) and Pub-Sub implementation
