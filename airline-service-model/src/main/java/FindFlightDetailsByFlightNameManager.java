@@ -1,0 +1,6 @@
+import criteria.FindFlightDetailsByFlightNameCriteria;
+import response.FindFlightDetailsByFlightNameResponse;
+
+public interface FindFlightDetailsByFlightNameManager {
+    FindFlightDetailsByFlightNameResponse findFlightDetailsByFlightNameResponse(FindFlightDetailsByFlightNameCriteria criteria);
+}
